@@ -22,7 +22,7 @@ export default function Data() {
         `http://localhost:3005/users?_page=${page}&_limit=5`
       );
 
-      setUsers(res.data.reverse());
+      setUsers(res.data);
     };
     fetchApi();
   }, [page]);

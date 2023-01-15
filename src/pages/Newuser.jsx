@@ -12,7 +12,8 @@ export default function Newuser() {
         name:"",
         email:"",
         role:"",
-        status:"",
+       status:"",
+       active:"",
         logindate:"",
         logintime:"",
     });
@@ -20,14 +21,16 @@ export default function Newuser() {
 
  const months = ["Jan","Feb","March","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
 
-const {name,email,role,status,logindate,logintime} = user;
+const {name,email,role,status,active,logindate,logintime} = user;
+
     const onInputChange =(e)=>{
       
-      
-   
+ 
+
        setUser({
         ...user,[e.target.name]:e.target.value
        })
+       console.log(user)
     }
     const onSubmit = async e => {
         e.preventDefault();
@@ -68,16 +71,19 @@ const {name,email,role,status,logindate,logintime} = user;
         <div className="form-group  " >
             <label  className="text-light  ">Status</label>
           
-  <RadioGroup
-    row
-    aria-labelledby="demo-row-radio-buttons-group-label"
-    name="row-radio-buttons-group"
-    value={status}
-    onChange={e=>onInputChange(e)}
-  >
-    <FormControlLabel value="active" control={<Radio />} label="active" />
-    <FormControlLabel value="inactive" control={<Radio />} label="inactive" />
-  </RadioGroup>
+
+      <RadioGroup
+        row
+        aria-labelledby="demo-row-radio-buttons-group-label"
+        name="status"
+        value={status}
+        onChange={e=>onInputChange(e)}
+      >
+        <FormControlLabel value="active" control={<Radio />} label="active" />
+        <FormControlLabel value="inactive" control={<Radio />} label="active" />
+       
+      
+      </RadioGroup>
         </div>
 
         <div className="form-group">
