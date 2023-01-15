@@ -1,0 +1,69 @@
+.form-title{
+    margin-top: 20px;
+
+}
+.backbtn{
+margin-left:10px;
+}
+.backbtn:hover{
+   color: royalblue;
+}
+.container{
+    margin-top: 10px;
+}
+
+
+.form-title > h2{
+    padding: .5em 0;
+}
+
+.new_user{
+    max-width: 786px;
+    margin: auto;
+}
+ .form-group,
+ .form-group{
+    margin: .4em 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid #333;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+
+}
+
+.form-group .radio,
+.form-group .radio{
+    margin: 1em 2em;
+   
+}
+
+
+/* adding style to radio buttons */
+
+
+
+.form-group .btn,
+.form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color:#16db93; 
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+.form-group .btn:hover,
+.form-group .btn:hover{
+    background-color:green;
+    color: #fff;
+}
